@@ -1,0 +1,38 @@
+<resources>
+    <!-- activity_main -->
+    <string name="app_name">My Application 1.2</string>
+    <string name="description">Na górze wyśrodkowany krótki opis!</string>
+    <string name="author">Michał Kapała</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+
+    <!-- activity_main2 -->
+    <string name="buttonBack">Back</string>
+    <string name="buttonToast">Toast</string>
+    <string name="buttonToggle">TB</string>
+    <string name="changeableText1">abc xyz</string>
+    <string name="changeableText2">yxz bac</string>
+    <string name="radioButton1">Change image</string>
+    <string name="radioButton2">Change text</string>
+    <string name="pictureAlt">Pokemon picture</string>
+
+    <!-- activity_main3 -->
+    <string name="text">tekst</string>
+    <string name="email">e-mail</string>
+    <string name="number">liczba</string>
+    <string name="phone">Tel.</string>
+
+    <!-- activity_main4 -->
+    <string name="scrollViewText1">ScrollView</string>
+    <string name="textField2">textField2</string>
+    <string name="textField3">textField3</string>
+    <string name="textField4">textField4</string>
+    <string name="textField5">textField5</string>
+    <string name="textField6">textField6</string>
+    <string name="textField7">textField7</string>
+    <string name="textField8">textField8</string>
+    <string name="textField9">textField9</string>
+    <string name="textField10">textField10</string>
+
+</resources>

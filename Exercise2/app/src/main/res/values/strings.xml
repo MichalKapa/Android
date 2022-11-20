@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Exercise2</string>
+
+    <string name="bn_left">LEFT</string>
+    <string name="bn_center">CENTER</string>
+    <string name="bn_right">RIGHT</string>
+
+    <string name="value1">12</string>
+    <string name="value2">43</string>
+
+    <string name="description">Enter values:</string>
+    <string name="result">Here will be Result</string>
+    <string name="calculate">CALCULATE</string>
+
+    <string name="add">ADD</string>
+    <string name="substract">SUBSTRACT</string>
+    <string name="multiply">MULTIPLY</string>
+
+    <string name="dialer_placeholder">123123123</string>
+    <string name="browser_placeholder">https://www.sport.pl/</string>
+    <string name="sms_placeholder">enter something</string>
+    <string name="dialer_button">Run Dialer</string>
+    <string name="browser_button">Run Browser</string>
+    <string name="sms_button">Run SMS</string>
+</resources>
