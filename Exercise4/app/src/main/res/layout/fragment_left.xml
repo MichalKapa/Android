@@ -8,6 +8,19 @@
     tools:context=".FragmentLeft">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/buttonLeft2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/dgo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -19,7 +32,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.35" />
+
+    <Button
+        android:id="@+id/buttonLeft3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/go3"
+        android:fontWeight="100"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        />
 
     <Button
         android:id="@+id/buttonLeft"
@@ -30,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_bias="0.85"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,25 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="go">GO</string>
+    <string name="dgo">"change color"</string>
+    <string name="go3">BOLD or ITALIC</string>
     <string name="bn_left">LEFT FRAGMENT</string>
     <string name="bn_center">CENTER FRAGMENT</string>
     <string name="bn_right">RIGHT FRAGMENT</string>
+
+    <string name="pozycja1">Default Theme</string>
+    <string name="pozycja2">Theme 2</string>
+    <string name="pozycja3">Theme 3</string>
+    <string name="pozycja4">Others</string>
+    <string name="pozycja4_1">Option1</string>
+    <string name="pozycja4_2">Option2</string>
+
+    <string name="colorPos1">Red</string>
+    <string name="colorPos2">Green</string>
+
+    <string name="fontSizePos1">30px</string>
+    <string name="fontSizePos2">20px</string>
+
+    <string name="fontStylePos1">BOLD</string>
+    <string name="fontStylePos2">ITALIC</string>
 </resources>

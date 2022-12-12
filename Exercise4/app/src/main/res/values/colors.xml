@@ -21,4 +21,7 @@
     <color name="my1_teal_700">#00BCD4</color>
     <color name="my1_black">#FFFFFF</color>
     <color name="my1_white">#000000</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
 </resources>
