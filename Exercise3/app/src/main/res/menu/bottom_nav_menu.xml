@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentLeft"
+        android:icon="@drawable/ic_left_foreground"
+        android:title="@string/bn_left" />
+    <item
+        android:id="@+id/fragmentCenter"
+        android:icon="@drawable/ic_center_foreground"
+        android:title="@string/bn_center" />
+    <item
+        android:id="@+id/fragmentRight"
+        android:icon="@drawable/ic_right_foreground"
+        android:title="@string/bn_right" />
+
+    <item
+        android:id="@+id/fragmentX"
+        android:icon="@drawable/ic_right_foreground"
+        android:title="FragX" />
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentCenter">
+
+    <fragment
+        android:id="@+id/fragmentLeft"
+        android:name="com.example.exercise3.FragmentLeft"
+        android:label="fragment_left"
+        tools:layout="@layout/fragment_left" >
+        <action
+            app:launchSingleTop="true"
+            android:id="@+id/action_fragmentLeft_to_fragmentCenter"
+            app:destination="@id/fragmentCenter" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCenter"
+        android:name="com.example.exercise3.FragmentCenter"
+        android:label="fragment_center"
+        tools:layout="@layout/fragment_center" >
+        <action
+            app:launchSingleTop="true"
+            android:id="@+id/action_fragmentCenter_to_fragmentRight"
+            app:destination="@id/fragmentRight" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRight"
+        android:name="com.example.exercise3.FragmentRight"
+        android:label="fragment_right"
+        tools:layout="@layout/fragment_right" >
+        <action
+            app:launchSingleTop="true"
+            android:id="@+id/action_fragmentRight_to_fragmentLeft"
+            app:destination="@id/fragmentLeft" />
+    </fragment>
+
+    <action
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_to_fragLeft"
+        app:destination="@id/fragmentLeft" />
+    <action
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_to_fragCenter"
+        app:destination="@id/fragmentCenter" />
+    <action
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_to_fragRight"
+        app:destination="@id/fragmentRight" />
+    <fragment
+        android:id="@+id/fragmentX"
+        android:name="com.example.exercise3.FragmentX"
+        android:label="fragment_x"
+        tools:layout="@layout/fragment_x" />
+    <action
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_to_fragX"
+        app:destination="@id/fragmentX" />
+</navigation>
+
+    <!--        app:popUpTo="@id/fragmentCenter"-->
