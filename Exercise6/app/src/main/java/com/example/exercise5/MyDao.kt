@@ -12,4 +12,6 @@ interface MyDao {
     fun insert(item: DBItem?) : Long
     @Delete
     fun delete(item: DBItem?) : Int
+    @Update
+    fun update(old: DBItem?, new: DBItem?)
 }

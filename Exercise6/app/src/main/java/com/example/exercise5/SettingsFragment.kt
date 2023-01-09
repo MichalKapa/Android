@@ -1,10 +1,14 @@
 package com.example.exercise5
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
 import androidx.viewpager2.widget.ViewPager2
 
 // TODO: Rename parameter arguments, choose names that match
@@ -50,7 +54,7 @@ class SettingsFragment : Fragment() {
         imagesList.add(R.drawable.ic_baseline_tsunami_24)
         imagesList.add(R.drawable.ic_baseline_wind_power_24)
 
-        viewPager.adapter = ViewPagerAdapter(imagesList)
+        viewPager.adapter = ViewPagerAdapter(imagesList, requireActivity())
         viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
     }
 

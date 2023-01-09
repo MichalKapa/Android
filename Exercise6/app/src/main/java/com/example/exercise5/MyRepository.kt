@@ -35,5 +35,8 @@ class MyRepository(context: Context) {
     fun deleteItem(item: DBItem?) : Boolean {
         return myDao.delete(item) > 0
     }
-
+    fun updateItem(item: DBItem?, index: Int?): Boolean {
+        myDao.update(myDao.getAllData()?.get(index!!), item)
+        return false
+    }
 }

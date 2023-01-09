@@ -1,5 +1,6 @@
 package com.example.exercise5.ui.slideshow
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,15 +9,17 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.exercise5.*
 import com.example.exercise5.databinding.FragmentSlideshowBinding
 import com.example.exercise5.databinding.ListRowBinding
+
 
 class SlideshowFragment : Fragment() {
 
@@ -69,6 +72,14 @@ class SlideshowFragment : Fragment() {
 
         val fab = binding.fab2
         fab.setOnClickListener(View.OnClickListener {
+            val data2: SharedPreferences = context?.getSharedPreferences("item",
+                AppCompatActivity.MODE_PRIVATE
+            )!!
+            val act = context
+            val editor = data2.edit()!!
+            editor.putBoolean("new", true)
+            editor.apply()
+
             findNavController().navigate(R.id.frameLayout)
         })
     }
@@ -97,14 +108,23 @@ class SlideshowFragment : Fragment() {
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
             holder.tv1.text = data[position].text_main
-//            holder.tv2.text = data[position].text_2 + data[position].item_value
+            holder.tv2.text = data[position].text_2
 //            holder.cBox.isChecked = data[position].item_checked
             holder.itemView.setOnClickListener {
-                Toast.makeText(
-                    requireContext(),
-                    "You clicked: " + (position + 1),
-                    Toast.LENGTH_SHORT
-                ).show()
+                val data: SharedPreferences = context?.getSharedPreferences("item",
+                    AppCompatActivity.MODE_PRIVATE
+                )!!
+                val editor = data.edit()!!
+                editor.putInt("details", position)
+                editor.apply()
+                findNavController().navigate(R.id.detailsFragment)
+
+
+//                Toast.makeText(
+//                    requireContext(),
+//                    "You clicked: " + (position + 1),
+//                    Toast.LENGTH_SHORT
+//                ).show()
             }
             holder.itemView.setOnLongClickListener {
                 if (dataRepo.deleteItem(data[position])) {
