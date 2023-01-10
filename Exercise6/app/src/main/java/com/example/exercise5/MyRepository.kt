@@ -37,6 +37,6 @@ class MyRepository(context: Context) {
     }
     fun updateItem(item: DBItem?, index: Int?): Boolean {
         myDao.update(myDao.getAllData()?.get(index!!), item)
-        return false
+        return true
     }
 }
